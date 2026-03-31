@@ -142,6 +142,11 @@ static ECDSA_SIG *ecdsa_s390x_nistp_sign_sig(const unsigned char *dgst,
     const BIGNUM *privkey;
     int off;
 
+    if (dgstlen < 0) {
+        ERR_raise(ERR_LIB_EC, EC_R_INVALID_LENGTH);
+        return NULL;
+    }
+
     group = EC_KEY_get0_group(eckey);
     privkey = EC_KEY_get0_private_key(eckey);
     if (group == NULL || privkey == NULL) {
@@ -238,6 +243,11 @@ static int ecdsa_s390x_nistp_verify_sig(const unsigned char *dgst, int dgstlen,
     const EC_GROUP *group;
     const EC_POINT *pubkey;
     int off;
+
+    if (dgstlen < 0) {
+        ERR_raise(ERR_LIB_EC, EC_R_INVALID_LENGTH);
+        return -1;
+    }
 
     group = EC_KEY_get0_group(eckey);
     pubkey = EC_KEY_get0_public_key(eckey);
