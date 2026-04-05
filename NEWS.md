@@ -25,9 +25,33 @@ OpenSSL 3.5
 
 ### Major changes between OpenSSL 3.5.5 and OpenSSL 3.5.6 [under development]
 
- * Fixed loss of key agreement group tuple structure when the `DEFAULT` keyword
-   is used in the server-side configuration of the key-agreement group list.
-   ([CVE-2026-2673])
+OpenSSL 3.5.6 is a security patch release. The most severe CVE fixed in this
+release is Medium.
+
+This release incorporates the following bug fixes and mitigations:
+
+  * Fixed incorrect failure handling in RSA KEM RSASVE encapsulation.
+    ([CVE-2026-31790])
+
+  * Fixed loss of key agreement group tuple structure when the `DEFAULT` keyword
+    is used in the server-side configuration of the key-agreement group list.
+    ([CVE-2026-2673])
+
+  * Fixed potential use-after-free in DANE client code.
+    ([CVE-2026-28387])
+
+  * Fixed NULL pointer dereference when processing a delta CRL.
+    ([CVE-2026-28388])
+
+  * Fixed possible NULL dereference when processing CMS KeyAgreeRecipientInfo.
+    ([CVE-2026-28389])
+
+  * Fixed possible NULL dereference when processing CMS
+    KeyTransportRecipientInfo.
+    ([CVE-2026-28390])
+
+  * Fixed heap buffer overflow in hexadecimal conversion.
+    ([CVE-2026-31789])
 
 ### Major changes between OpenSSL 3.5.4 and OpenSSL 3.5.5 [27 Jan 2026]
 
@@ -2188,6 +2212,12 @@ OpenSSL 0.9.x
 [CVE-2026-2673]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-2673
 [CVE-2026-22795]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-22795
 [CVE-2026-22796]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-22796
+[CVE-2026-28387]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-28387
+[CVE-2026-28388]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-28388
+[CVE-2026-28389]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-28389
+[CVE-2026-28390]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-28390
+[CVE-2026-31789]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-31789
+[CVE-2026-31790]: https://openssl-library.org/news/vulnerabilities/#CVE-2026-31790
 [ESV]: https://csrc.nist.gov/Projects/cryptographic-module-validation-program/entropy-validations
 [OpenSSL Guide]: https://www.openssl.org/docs/manmaster/man7/ossl-guide-introduction.html
 [README-QUIC.md]: ./README-QUIC.md
