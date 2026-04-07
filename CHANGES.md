@@ -27,7 +27,7 @@ OpenSSL Releases
 OpenSSL 3.4
 -----------
 
-### Changes between 3.4.4 and 3.4.5 [xx XXX xxxx]
+### Changes between 3.4.4 and 3.4.5 [7 Apr 2026]
 
  * Fixed incorrect failure handling in RSA KEM RSASVE encapsulation.
 

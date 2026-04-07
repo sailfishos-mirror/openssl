@@ -22,7 +22,7 @@ OpenSSL Releases
 OpenSSL 3.4
 -----------
 
-### Major changes between OpenSSL 3.4.4 and OpenSSL 3.4.5 [under development]
+### Major changes between OpenSSL 3.4.4 and OpenSSL 3.4.5 [7 Apr 2026]
 
 OpenSSL 3.4.5 is a security patch release. The most severe CVE fixed in this
 release is Medium.
