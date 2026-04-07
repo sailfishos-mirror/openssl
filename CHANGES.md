@@ -26,6 +26,10 @@ OpenSSL Releases
 OpenSSL 3.3
 -----------
 
+### Changes between 3.3.7 and 3.3.8 [xx XXX xxxx]
+
+ * none yet
+
 ### Changes between 3.3.6 and 3.3.7 [7 Apr 2026]
 
  * Fixed incorrect failure handling in RSA KEM RSASVE encapsulation.
