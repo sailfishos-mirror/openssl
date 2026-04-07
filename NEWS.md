@@ -21,7 +21,7 @@ OpenSSL Releases
 OpenSSL 3.3
 -----------
 
-### Major changes between OpenSSL 3.3.6 and OpenSSL 3.3.7 [under development]
+### Major changes between OpenSSL 3.3.6 and OpenSSL 3.3.7 [7 Apr 2026]
 
 OpenSSL 3.3.7 is a security patch release. The most severe CVE fixed in this
 release is Medium.
