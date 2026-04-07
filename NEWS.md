@@ -24,6 +24,10 @@ OpenSSL Releases
 OpenSSL 3.6
 -----------
 
+### Major changes between OpenSSL 3.6.2 and OpenSSL 3.6.3 [under development]
+
+  * none
+
 ### Major changes between OpenSSL 3.6.1 and OpenSSL 3.6.2 [7 Apr 2026]
 
 OpenSSL 3.6.2 is a security patch release. The most severe CVE fixed in this
